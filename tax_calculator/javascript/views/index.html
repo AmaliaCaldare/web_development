@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <script src="../index.js" defer></script>
     <title>Tax calculator</title>
 </head>
 <body>
@@ -12,17 +13,12 @@
         <h1>Tax calculator</h1>
     </header>
     <main>
-        <form>
-            <div>
-                <label for="amount">Monetary amount</label>
-                <input type="number" id="amount" value=0 required pattern="[0-9]" step="0.01" min="0">   
-            </div>
-            <div>
-                <label for="tax">Tax percentage</label>
-                <input type="number" id="tax" value=0 required pattern="[0-9]" step="0.01" min="0" max="100">  
-            </div>
-
-            <button id="btnCalculate">Calculate</button>
+        <form id="form">
+            <label for="amount">Monetary amount</label>
+            <input type="number" id="amount" value=0 required pattern="[0-9]" step="0.01" min="0">   
+            <label for="tax">Tax percentage</label>
+            <input type="number" id="tax" value=0 required pattern="[0-9]" step="0.01" min="0" max="100">
+            <input type="submit" value="Calculate">
         </form>
         <blockquote>
             <p class="quote">Tax amount: <span id="taxAmount">0</span></p>
@@ -30,6 +26,5 @@
         </blockquote>
     </main>
     <footer>&copy; 2021 Amalia Caldare</footer>
-    <script type="text/javascript" src="../index.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <title>Tax calculator</title>
 </head>
 <body>
@@ -25,16 +25,11 @@
                     $finalAmount = round($amount - $taxAmount, 2);
             ?>
         <form method="POST">
-            <div>
-                <label for="amount">Monetary amount</label>
-                <input type="number" name="amount", value=0  required pattern="[0-9]" step="0.01" min="0">
-            </div>
-            <div>
-                <label for="tax">Tax percentage</label>
-                <input type="number" name="tax" id="tax" value=0 required pattern="[0-9]" step="0.01" min="0" max="100">  
-            </div>
-
-            <button id="btnCalculate">Calculate</button>
+            <label for="amount">Monetary amount</label>
+            <input type="number" name="amount", value=0  required pattern="[0-9]" step="0.01" min="0">
+            <label for="tax">Tax percentage</label>
+            <input type="number" name="tax" id="tax" value=0 required pattern="[0-9]" step="0.01" min="0" max="100">
+            <input type="submit" value="Calculate">
         </form>
         <blockquote>
             <p>Tax amount: <span> <?=$taxAmount ?> </span> </p>

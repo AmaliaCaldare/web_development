@@ -1,4 +1,7 @@
-document.getElementById("btnCalculate").addEventListener('click', () => {
+"use strict";
+document.getElementById("form").addEventListener('submit', (e) => {
+    e.preventDefault();
+
     const amount = parseFloat(document.getElementById('amount').value);
     const tax = parseFloat(document.getElementById('tax').value);
 
