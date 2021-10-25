@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tax calculator</title>
 </head>
 <body>
@@ -33,12 +34,13 @@
                 <input type="number" name="tax" id="tax" value=0 required pattern="[0-9]" step="0.01" min="0" max="100">  
             </div>
 
-            <input type="submit" value="Calculate" name="Submit"><br/><br/>
+            <button id="btnCalculate">Calculate</button>
         </form>
         <blockquote>
             <p>Tax amount: <span> <?=$taxAmount ?> </span> </p>
             <p>Final Amount: <span> <?=$finalAmount ?> </span> </p>
         </blockquote>
     </main>
+    <footer>&copy; 2021 Amalia Caldare</footer>
 </body>
 </html>
