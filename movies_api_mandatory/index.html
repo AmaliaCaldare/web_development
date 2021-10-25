@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> 
+    <script src="js/script.js"></script>
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <h1>Movies</h1>
+    </header>
+        <div class="wrapper">
+            <select name="select-search" id="options" class="dropdown">
+                <option value="movie">Movies</option>
+                <option value="years">Movies and release year</option>
+                <option value="person">Celebrity</option>
+            </select>
+            <input placeholder="Search" type="text" class="search" id="input">
+            <button type="submit" class="submit">Search</button>
+            <button type="reset" class="clear">Clear</button>
+        </div>
+
+        <div class="flex-box"> </div>
+
+        <div id="modalMovie" class="modalMovie">
+            <div class="modal-movie">
+                <span class="closeMovie">&times;</span>
+                <div class="movie-details"></div>
+                <div class="crew">
+                    <div  class="producers-list">
+                    </div>
+                    <div class="directors-list">
+                    </div>
+                    <div  class="writers-list">
+                    </div>
+                    <div class="music-composers-list">
+                    </div>
+                    <div  class="executive-producers-list">
+                    </div>
+                </div>
+                <div class="cast">
+                    <p><span> Actors: </span></p>
+                    <ul class="actors-list">
+                </div>
+                <!-- <div class="box">
+                    <div id="actors" class="credits">
+                        <p><span> Actors: </span></p>
+                        <ul class="actors-list">
+                    </div>
+                    <div id="producers" class="credits">
+                        <p><span> Producers: </span></p>
+                        <ul class="producers-list">
+                    </div>
+                    <div id="directors" class="credits">
+                        <p><span> Directors: </span></p>
+                        <ul class="directors-list">
+                    </div>
+                    <div id="writers" class="credits">
+                        <p><span> Writers: </span></p>
+                        <ul class="writers-list">
+                    </div>
+                    <div id="composers" class="credits">
+                        <p><span> Music Composers: </span></p>
+                        <ul class="composers-list">
+                    </div>
+                    <div id="ec-producers" class="credits">
+                        <p><span> Executive Producers: </span></p>
+                        <ul class="ec-list" id="credits">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="modalPerson"  class="modalPerson" >
+            <div class="modal-person">
+                <span class="closePerson">&times;</span>
+                <div class="person-details"></div>
+                <div class="movies">
+                    <p><span> Movies: </span></p>
+                    <ul class="movies-list">
+
+                </div>
+            </div>
+        </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+</html>
