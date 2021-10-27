@@ -8,6 +8,7 @@ This repository contains different projects for the web development class.
 - PHP
 
 ### Projects:
-- [Tax calculator](tax_calculator)
-- [Temperature converter](temperature_converter)
+- [Tax Calculator](tax_calculator)
+- [Temperature Converter](temperature_converter)
 - [Movies Database Api](movies_api_mandatory)
+- [Kea Restaurant](kea_restaurant)
