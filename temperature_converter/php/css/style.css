@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman", Times, seri;
+}
+
+header {
+    padding-top: 0.5rem;
+    height: 50px;
+
+}
+
+footer {
+    margin-top: 2rem;
+    height: 25px;
+    padding-top: 1rem;
+}
+
+main {
+    width: 250px;
+    padding: 30px 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+select {
+    width: 105px;
+    margin: 3px 0px;
+}
+
+input{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    margin: 3px 0;
+}
+.container {
+    display: flex;
+    justify-content: column;
+}
+
+.results {
+    display: none;
+}
+
+#btn {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+}
+
+.results {
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 3px 0;
+}
